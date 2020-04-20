@@ -1,0 +1,10 @@
+.example1 {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.example1 {
+    border-width: 0 2px 0 2px;
+    border-style: dotted;
+    border-color: red;
+}
