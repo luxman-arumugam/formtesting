@@ -15,7 +15,34 @@
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.9633" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.9633" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=59fb4852cf3bfe589c6c6f21"/>
-<style type="text/css">
+<script
+      type="text/javascript"
+      src="http://developer.freshsuccess.com/scripts/success.min.js"
+    ></script>
+    <script>
+      /*
+       * On each page that loads, initialize the Freshsuccess analytics js library.
+       * The userId and accountId can be set here if known at initialization time.
+       * Once the userId/accountId are set they are stored in a cookie for later use,
+       * so that they only need to be set once per session.
+       */
+      window.onload = function () {
+        _na = new na(
+          "us-d3vulav4nzfovi9rhueuztjlp2jbsrjk",
+          "7244f6b818c042f35fce4f819e3f06f1",
+          {
+            trackUnload: true,
+            debugUrl: "https://events-test-us.freshsuccess.com/v1/7244f6b818c042f35fce4f819e3f06f1/7egu1dmxgnxlohpsbx0e1cxxtn1k3imy",
+            disableEventSend: false, // disable the sending of events
+            debug: false, // disable console debug prints
+          },
+        );
+      };
+      function sample() {
+        _na.sendFeatureEvent("test-feature", "12234", "FSU-test");
+      }
+    </script>
+	<style type="text/css">
     .form-label-left{
         width:150px;
     }
